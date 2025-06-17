@@ -2,7 +2,7 @@ package com.example.digital_loan_service.controller;
 
 import com.example.digital_loan_service.model.UserEntity;
 import com.example.digital_loan_service.service.UserService;
-import com.example.digitalloanservice.security.JwtUtil;
+import com.example.digital_loan_service.security.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,4 +1,4 @@
-package com.example.digitalloanservice.security;
+package com.example.digital_loan_service.security;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

@@ -1,7 +1,7 @@
-package com.example.digitalloanservice.security;
+package com.example.digital_loan_service.security;
 
-import com.example.digitalloanservice.model.UserEntity;
-import com.example.digitalloanservice.repository.UserRepository;
+import com.example.digital_loan_service.model.UserEntity;
+import com.example.digital_loan_service.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

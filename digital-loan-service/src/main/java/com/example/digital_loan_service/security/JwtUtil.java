@@ -1,4 +1,4 @@
-package com.example.digitalloanservice.security;
+package com.example.digital_loan_service.security;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
