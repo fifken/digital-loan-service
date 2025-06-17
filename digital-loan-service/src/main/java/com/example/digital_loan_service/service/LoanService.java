@@ -52,4 +52,15 @@ public class LoanService {
         }
         return null; // Or throw an exception
     }
+
+    public boolean updateLoanStatus(Long loanId, String status) {
+        Optional<LoanEntity> optionalLoan = loanRepository.findById(loanId);
+        if (optionalLoan.isPresent()) {
+            LoanEntity loan = optionalLoan.get();
+            loan.setStatus(status);
+            loanRepository.save(loan);
+            return true;
+        }
+        return false;
+    }
 }
