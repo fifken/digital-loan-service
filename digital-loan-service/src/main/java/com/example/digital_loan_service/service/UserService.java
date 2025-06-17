@@ -19,7 +19,9 @@ public class UserService {
 
     public UserEntity registerUser(UserEntity user) {
         user.setPassword(passwordEncoder.encode(user.getPassword()));
-        user.setRole("USER"); // Default role for registration
+        if (user.getRole() == null || user.getRole().isEmpty()) {
+            user.setRole("USER"); // Default only if not provided
+        }
         return userRepository.save(user);
     }
 
